@@ -15,7 +15,7 @@ JavaScript: Programming language for implementing interactive behavior and funct
 #How to Run
 
 ##Clone the repository to your local machine:
-git clone https://github.com/your-username/random-number-quiz.git
+git clone https://github.com/BARATHM111/Random-quiz.git
 ##Navigate to the project directory:
 cd random-number-quiz
 ##Open the index.html file in your web browser.
