@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3; /* Light gray background color */
+}
+
+.container {
+    text-align: center;
+    background-color: #fff; /* White background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    animation: fadeIn 0.5s ease forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 24px;
+    animation: slideIn 0.5s ease forwards; /* Slide-in animation for heading */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#answerInput {
+    margin-top: 10px;
+    padding: 5px;
+    animation: scaleIn 0.5s ease forwards; /* Scale-in animation for input field */
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#submitBtn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    animation: fadeIn 0.5s ease forwards; /* Fade-in animation for submit button */
+}
+
+#result {
+    margin-top: 10px;
+    opacity: 0;
+    animation: slideIn 0.5s ease forwards, fadeIn 0.5s ease forwards; /* Slide-in and fade-in animations for result */
+}
+
+/* Additional animation for incorrect result */
+.incorrect {
+    color: red;
+    animation: shake 0.5s ease forwards; /* Shake animation for incorrect result */
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
